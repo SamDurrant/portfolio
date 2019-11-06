@@ -1,0 +1,132 @@
+.text-btn:focus,
+.toggle-btn:focus,
+.submit-btn:focus {
+  outline: none;
+}
+.text-btn:focus-visible,
+.toggle-btn:focus-visible,
+.submit-btn:focus-visible {
+  outline: 3px solid $color-indigo-opaque;
+  outline-offset: 2px;
+}
+
+.text-btn {
+  &_lower {
+    font-weight: 500;
+  }
+  &_upper {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+  }
+
+  &:link,
+  &:visited {
+    display: inline-block;
+    flex: 1 1 30%;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: $color-indigo;
+    font-size: 2rem;
+    transition: $transition-one;
+    cursor: pointer;
+  }
+  
+  &_lower:hover,
+  &_lower:active {
+    transform: scale(1.25);
+    letter-spacing: 5px;
+  }
+  &_upper:hover,
+  &_upper:active {
+    transform: scale(1.15);
+    letter-spacing: 2px;
+  }
+}
+
+.toggle-btn {
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  color: $color-indigo;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 1.25rem 5.5rem .25rem;
+  border: none;
+  transition: $transition-one;
+
+  &_active {
+    font-weight: 700;
+    border-bottom: 2px solid $color-indigo;
+  }
+  
+  &:hover {
+    border-bottom: 2px solid $color-indigo;
+    transform: scale(1.15);
+    letter-spacing: 2px;
+  }
+  &:active {
+    transform: translateY(-2px);
+  }
+}
+
+.submit-btn {
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: $color-indigo;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 1rem;
+  margin: 0 auto;
+  border: none;
+  transition: $transition-one;
+
+  // box-sizing cannot be set to border-box for before and after elements for this to work
+  &:before {
+    content: '';
+    position: absolute;
+    top: -.5rem;
+    left: -.5rem;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: .5rem solid transparent;
+  }
+  
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    right: -.5rem;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: .5rem solid transparent;
+  }
+  
+  &:hover {
+    &:before {
+      animation: animateBorder 150ms cubic-bezier(.17,.67,0,.85) forwards;
+    }
+    &:after {
+      animation: animateBorder2 150ms cubic-bezier(.17,.67,0,.85) forwards 150ms;
+    }
+  }
+}
+
+.icon-btn {
+  font-size: 4rem;
+  color: $color-indigo;
+  transition: $transition-one;
+
+  &:hover,
+  &:active {
+    transform: scale(1.25);
+    color: $color-sand;
+  }
+  &:active {
+    transform: translateY(-2px);
+  }
+}

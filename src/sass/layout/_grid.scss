@@ -1,0 +1,5 @@
+section {
+  display: grid;
+  grid-template-rows: 10rem min-content;
+  grid-template-columns: minmax(2rem, 1fr) [l-center-start] repeat(4, minmax(min-content, 1fr)) [l-center-end] repeat(2, minmax(2rem, 1fr)) [r-center-start] repeat(4, minmax(min-content, 1fr)) [r-center-end] minmax(2rem, 1fr);
+}

@@ -1,0 +1,12 @@
+@mixin section-grid_half {
+  display: grid;
+  grid-template-rows: 10rem min-content;
+  grid-template-columns: minmax(2rem, 1fr) [center-start] repeat(4, minmax(min-content, 1fr)) [center-end] minmax(2rem, 1fr);
+}
+
+// @mixin tri-border-maker($border-1, $border-2, $border-3, $color, $size) {
+//   $border-1: $size solid $color;
+//   $border-2: $size solid $color;
+//   $border-3: $size solid $color;
+  
+// }

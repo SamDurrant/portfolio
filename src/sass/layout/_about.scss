@@ -1,0 +1,21 @@
+.about {
+  min-height: 100vh;
+  padding: 10rem 0;
+
+  .heading-secondary {
+    grid-row: 1 / 2;
+    grid-column: 7 / -1;
+  }
+
+  &__paragraphs {
+    grid-row: 2 / 3;
+    grid-column: r-center-start / r-center-end;
+  }
+
+  .skills-box {
+    grid-row: 2 / 3;
+    grid-column: l-center-start / l-center-end;
+    align-self: center;
+    height: min-content;
+  }
+}

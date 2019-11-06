@@ -1,0 +1,20 @@
+.skills-box {
+  padding: 2rem;
+  box-shadow: $box-shadow;
+
+  &__border-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 3rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+}

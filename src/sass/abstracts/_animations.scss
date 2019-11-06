@@ -1,0 +1,59 @@
+@keyframes falling {
+  to {
+  transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes animateBorder {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: $color-aqua;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: $color-aqua;
+    border-right-color: $color-aqua;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: $color-aqua;
+    border-right-color: $color-aqua;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+@keyframes animateBorder2 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: $color-aqua;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: $color-aqua;
+    border-left-color: $color-aqua;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: $color-aqua;
+    border-left-color: $color-aqua;
+  }
+}

@@ -1,0 +1,41 @@
+.project {
+  padding: 2rem;
+  box-shadow: $box-shadow;
+
+  &__border-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0 3rem 3rem;
+  }
+
+  &__content {
+    margin-right: 1rem;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  &__description {
+    padding: 3rem 0;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+
+  &__tech {
+    text-align: center;
+  }
+
+  .btn-box {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0 0;
+
+    li {
+      flex: 1 1;
+    }
+  }
+}

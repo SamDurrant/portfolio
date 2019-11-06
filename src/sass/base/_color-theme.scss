@@ -1,0 +1,56 @@
+body {
+  background-color: $color-sage;
+}
+
+.mosaic-box,
+.toggle-box,
+.projects {
+  background-color: $color-sand;
+}
+
+.about,
+.social-box {
+  background-color: $color-aqua;
+}
+
+.contact {
+  background-color: $color-sage;
+}
+
+// ----- BORDERS -----
+.border-r_light {
+  border-top: 1rem solid $color-sand;
+  border-left: 1rem solid $color-sand;
+  border-bottom: 1rem solid $color-sand;
+  // @include tri-border-maker('border-top', 'border-left', 'border-bottom', $color-sand, '1rem');
+}
+
+.border-l_dark {
+  border-top: 1rem solid $color-aqua;
+  border-right: 1rem solid $color-aqua;
+  border-bottom: 1rem solid $color-aqua;
+  // @include tri-border-maker('border-top', 'border-right', 'border-bottom', $color-aqua, '1rem');
+}
+
+.border-r_dark {
+  border-top: 1rem solid $color-aqua;
+  border-left: 1rem solid $color-aqua;
+  border-bottom: 1rem solid $color-aqua;
+  // @include tri-border-maker('border-top', 'border-left', 'border-bottom', $color-aqua, '1rem');
+}
+
+.border-in_light {
+  border: .5rem solid $color-aqua-light;
+}
+
+.border-out_light {
+  border: .5rem solid $color-sage;
+}
+
+.border-in_dark {
+  border: .5rem solid $color-aqua;
+}
+
+.border-out_dark {
+  border: .5rem solid $color-sage-dark;
+}

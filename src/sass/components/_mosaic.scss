@@ -1,0 +1,13 @@
+#mosaic {
+  height: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.desert {
+  transform: translate3d(0, -100%, 0);
+}

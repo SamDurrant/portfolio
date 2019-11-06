@@ -1,0 +1,21 @@
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/animations';
+
+@import 'base/color-theme';
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'components/buttons';
+@import 'components/form';
+@import 'components/mosaic';
+@import 'components/navbar';
+@import 'components/project';
+@import 'components/skills-box';
+
+@import 'layout/about';
+@import 'layout/contact';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/projects';

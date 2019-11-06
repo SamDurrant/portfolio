@@ -1,0 +1,15 @@
+.navbar {
+  border-left: 2px solid $color-sand;
+  margin: 5% 0;
+
+  ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    li {
+      flex: 1 1;
+      text-align: center;
+    }
+  }
+}

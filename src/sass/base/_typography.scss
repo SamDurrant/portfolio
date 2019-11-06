@@ -1,0 +1,97 @@
+@font-face {
+  font-family: sunflower;
+  src: url(../fonts/Sunflower.otf);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $color-brown;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-family: sunflower;
+  text-transform: uppercase;
+  color: $color-indigo;
+}
+
+.heading-primary {
+  font-size: 6rem;
+  line-height: 8rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  padding: 2rem;
+  letter-spacing: 3px;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+.heading-tertiary {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+  color: $color-indigo;
+  height: max-content;
+  padding: 3rem;
+}
+
+.text-blurb {
+  margin: 5vh 0 7vh;
+  text-align: right;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.statement-blurb {
+  border: 1rem solid $color-sand;
+  font-family: 'Roboto', sans-serif;
+  color: $color-indigo;
+  font-size: 4.5rem;
+  line-height: 1.4;
+  font-weight: 700;
+  max-width: 35rem;
+  padding: 3rem;
+  box-shadow: $box-shadow;
+
+  @media only screen and (max-width: $bp-largest) {
+    border: .5rem solid $color-sand;
+    font-size: 3.5rem;
+    max-width: 30rem;
+  }
+}
+
+.heading-box {
+  text-align: right;
+}
+
+.sideways-lr {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  letter-spacing: 3px;
+}
+
+.sideways-rl {
+  writing-mode: vertical-rl;
+  transform: rotate(360deg);
+  letter-spacing: 3px;
+}

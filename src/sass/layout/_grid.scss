@@ -7,6 +7,10 @@ section {
     grid-template-rows: repeat(2, 10rem) min-content repeat(2, 10rem);
     grid-template-columns: 4rem [l-center-start] repeat(4, minmax(min-content, 1fr)) [l-center-end] repeat(2, 4rem) [r-center-start] repeat(4, minmax(min-content, 1fr)) [r-center-end] 4rem;
   }
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 10rem min-content 5rem min-content;
+    grid-template-columns: 4rem repeat(4, 1fr) 4rem;
+  }
 }
 
 @mixin section-grid_half {

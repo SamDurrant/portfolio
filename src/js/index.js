@@ -42,7 +42,9 @@ desert.forEach(block => {
 const addAnimation = () => {
   let delay = 0;
   desert.forEach(block => {
-    block.style.animation = `falling .4s ${delay += .3}s cubic-bezier(0.19, 0.94, 0.77, 1.12) forwards`;
+    let animation = `falling .4s ${delay += .3}s cubic-bezier(0.19, 0.94, 0.77, 1.12) forwards`;
+    block.style.animation = animation;
+    block.style.webkitAnimation = animation;
 
     // cubic-bezier(0.215, 0.61, 0.355, 1)
     // cubic-bezier(0.55, 0.085, 0.108, 0.73)
@@ -102,3 +104,13 @@ window.addEventListener('load', function () {
 
 
 // console.log(desert[0].getAttribute('fill'));
+
+
+// // SET VH TO MATCH INNER WINDOW HEIGHT
+// let vh = window.innerHeight * 0.01;
+// document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+// window.addEventListener('resize', () => {
+//   vh = window.innerHeight * 0.01;
+//   document.documentElement.style.setProperty('--vh', `${vh}px`);
+// })

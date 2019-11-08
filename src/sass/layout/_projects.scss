@@ -3,12 +3,8 @@
 
   .process {
     @include section-grid_half;
-    grid-row: 1 / 3;
+    grid-row: 1 / -1;
     grid-column: 1 / 7;
-
-    @media only screen and (max-width: $bp-large) {
-      grid-row: 1 / -1;
-    }
 
     .heading-secondary {
       grid-row: 1 / 2;
@@ -18,17 +14,34 @@
     &__paragraphs {
       grid-row: 2 / 3;
       grid-column: center-start / center-end;
+
+      p {
+        margin: 1rem 0;
+      }
     }
   }
   
   .showcase {
-    grid-row: 1 / 3;
+    grid-row: 1 / -1;
     grid-column: r-center-start / r-center-end;
     align-self: center;
     padding: 10rem 0;
+  }
 
-    @media only screen and (max-width: $bp-large) {
-      grid-row: 1 / -1;
+  @media only screen and (max-width: $bp-medium) {
+    padding: 10rem 0;
+
+    .process {
+      grid-column: 1 / 6;
+      grid-row: 1 / 3;
+    }
+
+    .showcase {
+      grid-column: 2 / 6;
+      grid-row: 3 / 5;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -39,4 +52,10 @@
   left: 0;
   height: 100vh;
   padding: 10rem 0;
+
+  @media only screen and (max-width: $bp-medium) {
+    position: relative;
+    height: max-content;
+    padding: 0;
+  }
 }

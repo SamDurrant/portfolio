@@ -1,10 +1,8 @@
 .text-btn:focus,
-.toggle-btn:focus,
 .submit-btn:focus {
   outline: none;
 }
 .text-btn:focus-visible,
-.toggle-btn:focus-visible,
 .submit-btn:focus-visible {
   outline: 3px solid $color-indigo-opaque;
   outline-offset: 2px;
@@ -41,31 +39,6 @@
   &_upper:active {
     transform: scale(1.15);
     letter-spacing: 2px;
-  }
-}
-
-.toggle-btn {
-  background-color: transparent;
-  font-family: 'Roboto', sans-serif;
-  color: $color-indigo;
-  font-size: 2rem;
-  font-weight: 300;
-  margin: 1.25rem 5.5rem .25rem;
-  border: none;
-  transition: $transition-one;
-
-  &_active {
-    font-weight: 700;
-    border-bottom: 2px solid $color-indigo;
-  }
-  
-  &:hover {
-    border-bottom: 2px solid $color-indigo;
-    transform: scale(1.15);
-    letter-spacing: 2px;
-  }
-  &:active {
-    transform: translateY(-2px);
   }
 }
 

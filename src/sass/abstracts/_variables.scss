@@ -16,11 +16,22 @@ $bp-medium: 50em; // 800px (800 / 16)
 $bp-small: 37.5em; // 600px
 
 .m-sm {
-  margin: 5rem 0;
+  margin: 4rem 0;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 3rem 0;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    margin: 2rem 0;
+  }
 }
 
 .m-med {
   margin: 10rem 0;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 5rem 0;
+  }
 }
 
 // transition: all 150ms cubic-bezier(.57,.29,.83,0);

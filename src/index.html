@@ -20,6 +20,10 @@
     rel="stylesheet">
   <!-- <link rel="stylesheet" href="./css/style.css"> -->
   <script src="https://kit.fontawesome.com/d13f232e62.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -38,38 +42,6 @@
     </div>
     <div class="mosaic-box">
       <svg id="mosaic" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 540 900" xml:space="preserve">
-        <g id="forest hidden">
-          <polyline id="ground_1_" class="st0 forest"
-            points="944,700 974,730 1044,740 1184,791 1184,900 644,900 644,750 734,770 804,730 854,740 894,710" />
-          <polyline id="tree1_1_" class="st1 forest"
-            points="734,760 794,720 854,730 837.33,608.89 861.78,615.56 824,470 844,480 810.67,265.56 724,480 744,480 714,590 734,600 714,670" />
-          <polygon id="tree2_1_" class="st1 forest"
-            points="977.33,443.33 938.44,542.22 952.89,545.56 938.44,615.56 952.89,615.56 914,700 944,690 979.56,720	1074,730 1034,640 1044,640 1000.67,555.56 1012.89,555.56" />
-          <polyline id="hill1_1_" class="st2 forest"
-            points="696.76,670.04 724,610 694,590 734,490 664,510 644,470 644,740 724,760" />
-          <polygon id="hill2_1_" class="st2 forest"
-            points="844,510 937.33,558.89 924,622.22 937.33,628.89 904,700 864,720 848.44,636.67 882.89,622.22" />
-          <polygon id="hill3_1_" class="st2 forest"
-            points="1034,590 1184,724.44 1184,780 1084,740 1054,660 1064,650 1024,590 " />
-          <polygon id="mtn1_1_" class="st3 forest" points="694,270 644,310 644,460 674,500 714,490 724,460 764,340" />
-          <polygon id="mtn2_1_" class="st3 forest"
-            points="867.33,383.33 844,400 854,500 934,540 954,470 934,410 914,438.89" />
-          <polygon id="mtn3_1_" class="st3 forest"
-            points="1064,420 1014,510 1024,570 1184,700 1184,470 1154,400 1124,430" />
-          <polygon id="peak1_1_" class="st4 forest"
-            points="692.89,161.11 644,200 644,300 694,260 774,330 814,248.89 824,300 854,201.11 788.44,222.22" />
-          <polygon id="peak2_1_" class="st4 forest"
-            points="861.78,221.11 824,320 844,390 864,370 914,430 934,390 964,460 995.11,377.78" />
-          <polygon id="peak3_1_" class="st4 forest"
-            points="984,440 1017.33,354.44 1068.44,348.89 1108.44,294.44 1184,260 1184,450 1154,390 1124,420 1054,410 1004,510" />
-          <circle id="sun_1_" class="st5 forest" cx="966.22" cy="143.33" r="98.89" />
-          <polygon id="sky1_1_" class="st6 forest"
-            points="644,0 664,80 644,90 644,180 694,150 794,210 864,190 844,120 874,70 914,40 934,0" />
-          <polygon id="sky2_1_" class="st6 forest"
-            points="944,0 924,40 994,40 1044,60 1084,120 1074,190 1094,200 1184,160 1184,0" />
-          <polygon id="sky3_1_" class="st6 forest"
-            points="1184,250 1184,170 1089.56,211.11 1064,190 1034,240 974,260 894,240 994,370 1014,350 1064,340 1104,280" />
-        </g>
         <g id="desert">
           <polyline id="ground" class="st2 desert"
             points="280,780 340,740 400,740 540,690 540,900 0,900 0,780 95.56,740 147.78,740 180,770 220,780" />
@@ -100,10 +72,6 @@
             points="530,30 540,230 430,200 457.78,106.67 388.89,35.56 303.33,30 250,70 180,0 540,0" />
         </g>
       </svg>
-      <div class="toggle-box">
-        <button class="toggle-btn" data-place="forest" tabindex="0">forest</button>
-        <button class="toggle-btn toggle-btn_active" data-place="desert" tabindex="0">desert</button>
-      </div>
     </div>
   </header>
 
@@ -130,7 +98,8 @@
     </div>
     <div class="about__paragraphs m-sm">
       <p>When I was a kid I loved puzzles (who am I kidding, I still do). If someone had told me that I could grow up to work on puzzles for a career, I probably would have laughed. That’s what coding is for me - a puzzle of code that needs to be created in such a way that what emerges is something functional, beautiful, well thought-out and organized. When I first picked up coding, I never looked back and I never put it down. I have an eye for design but I’m also able to use my logic and detail-oriented nature to create some pretty awesome projects.</p>
-      <p>Debitis amet, enim, ea vitae delectus excepturi adipisci blanditiis fugiat nemo magni deserunt libero, beatae commodi expedita iure repudiandae officia est. Error accusamus atque enim nemo, similique facere porro animi! Qui ducimus nisi sunt tempora aperiam cumque assumenda libero molestiae blanditiis facere quas quis, deserunt eaque, pariatur praesentium odio voluptas perspiciatis earum quos nihil autem. Quaerat distinctio odit asperiores corporis incidunt ut perferendis autem maxime.</p>
+      <p>If I'm not coding, I can often be found adventuring with my dog Mirah. I love hiking and camping but recently I've gotten into enjoying biking.</p>
+      <p>Currently I am brainstorming up my next idea for a React application to put some of my newer knowledge to good use. Courses I am in the midst of include Codecademy's Web Development track and WesBos's JavaScript 30.</p>
     </div>
   </section>
 
@@ -139,25 +108,25 @@
       <div class="process fixed-box">
         <h2 class="heading-secondary border-l_dark">Projects</h2>
         <div class="process__paragraphs m-sm">
-          <p>I am always striving to find ways to grow. Whether it’s finding ways to organize my code with architecture or naming standards, reading documentation or coding a new project, I enjoy finding new methods and tools that help me hone my developer skills. With each project that I work on, I make a concerted effort to learn something new.</p>
-          <p>I know that I’m learning something new when it starts to get tough. And those are the best moments. I mean, I do get a pretty mean scowl on my face when something’s being super buggery, but I love it because I know that what follows is this really amazing aha moment. Where it all makes sense, something finally starts working or I’ve finally tracked down a bug. Even if it’s only a typo or a mislabeled variable. The tough spots have taught me to be very generous with laughing at myself and to try not to take myself too seriously.</p>
+          <p>I am always striving to find ways to grow. Whether it’s finding ways to organize my code with architecture or naming standards, reading documentation or coding a new project, I enjoy discovering new methods and tools that help me hone my developer skills. With each project that I work on, I make a concerted effort to learn something new.</p>
+          <p>I know that I’m learning something new when it starts to get tough. And those are the best moments. I mean, I do get a pretty mean scowl on my face when something’s being super buggery, but I love it because I know that what follows is this really amazing aha moment. Where it all makes sense, something finally starts working or I’ve finally tracked down a bug. Even if it’s only a typo or a mislabeled variable.</p>
+          <p>Those tough spots have taught me to be very generous with laughing at myself and to try not to take myself too seriously. They've also taught me that the only way to get anywhere is by doing the tough stuff.</p>
         </div>
       </div>
 
       <div class="showcase">
         <div class="border-out_dark m-med project">
           <div class="project__border-box border-in_dark">
-            <h3 class="heading-tertiary sideways-rl">Brunch Birds</h3>
+            <h3 class="heading-tertiary sideways-rl">Snaps</h3>
             <div class="project__content">
               <picture>
-                <img src="./images/cliffs.jpg" alt="desert" class="project__img">
+                <img src="./images/snaps.jpg" alt="desert" class="project__img">
               </picture>
-              <p class="project__description">Passionate about healthy eating, I wanted to create a well-thought out
-                restaurant website that was easy to navigate and responsive.</p>
+              <p class="project__description">Get organized with snaps, an application that allows you to organize notes, ideas and vocabulary on double-sided cards.</p>
               <p class="project__tech">Tech: HTML, Sass, JavaScript/ES6, Webpack, Babel</p>
               <ul class="btn-box">
-                <li><a href="#" class="text-btn text-btn_upper">Site</a></li>
-                <li><a href="#" class="text-btn text-btn_upper">Code</a></li>
+                <li><a href="https://snaps.netlify.com/" class="text-btn text-btn_upper" target="_blank">Site</a></li>
+                <li><a href="https://github.com/SamDurrant/snaps" class="text-btn text-btn_upper" target="_blank">Code</a></li>
               </ul>
             </div>
           </div>
@@ -168,32 +137,14 @@
             <h3 class="heading-tertiary sideways-rl">Brunch Birds</h3>
             <div class="project__content">
               <picture>
-                <img src="./images/foggy_firs.jpg" alt="desert" class="project__img">
+                <img src="./images/brunchBirds.jpg" alt="desert" class="project__img">
               </picture>
               <p class="project__description">Passionate about healthy eating, I wanted to create a well-thought out
                 restaurant website that was easy to navigate and responsive.</p>
               <p class="project__tech">Tech: HTML, Sass, JavaScript/ES6, Webpack, Babel</p>
               <ul class="btn-box">
-                <li><a href="#" class="text-btn text-btn_upper">Site</a></li>
-                <li><a href="#" class="text-btn text-btn_upper">Code</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="border-out_dark m-med project">
-          <div class="project__border-box border-in_dark">
-            <h3 class="heading-tertiary sideways-rl">Brunch Birds</h3>
-            <div class="project__content">
-              <picture>
-                <img src="./images/mountain.jpg" alt="desert" class="project__img">
-              </picture>
-              <p class="project__description">Passionate about healthy eating, I wanted to create a well-thought out
-                restaurant website that was easy to navigate and responsive.</p>
-              <p class="project__tech">Tech: HTML, Sass, JavaScript/ES6, Webpack, Babel</p>
-              <ul class="btn-box">
-                <li><a href="#" class="text-btn text-btn_upper">Site</a></li>
-                <li><a href="#" class="text-btn text-btn_upper">Code</a></li>
+                <li><a href="https://brunchbirds.netlify.com/" class="text-btn text-btn_upper" target="_blank">Site</a></li>
+                <li><a href="https://github.com/SamDurrant/brunch-birds" class="text-btn text-btn_upper" target="_blank">Code</a></li>
               </ul>
             </div>
           </div>

@@ -8,10 +8,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 3rem 0 3rem 3rem;
-
-    @media only screen and (max-width: $bp-large) {
-      padding: 1.5rem 0 1.5rem 1.5rem;
-    }
   }
 
   &__content {
@@ -41,6 +37,20 @@
     li {
       flex: 1 1;
       text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    margin-bottom: 0;
+    max-width: 45rem;
+    align-self: flex-end;
+    
+    &:nth-child(2) {
+      align-self: flex-start;
+    }
+
+    &__border-box {
+      padding: 1.5rem 0 1.5rem 1.5rem;
     }
   }
 }

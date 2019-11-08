@@ -4,8 +4,18 @@
 }
 
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 75%;
+  }
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%;
+  }
 }
 
 body {
@@ -26,9 +36,13 @@ body {
   font-size: 6rem;
   line-height: 8rem;
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: $bp-large) {
     font-size: 5rem;
     line-height: 6rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 4rem;
+    line-height: 5rem;
   }
 }
 
@@ -53,6 +67,10 @@ body {
   color: $color-indigo;
   height: max-content;
   padding: 3rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 1.5rem;
+  }
 }
 
 .text-blurb {
@@ -60,6 +78,11 @@ body {
   text-align: right;
   font-size: 1.8rem;
   font-weight: 500;
+
+  @media only screen and (max-width: $bp-large) {
+    margin: 2vh 0 3vh;
+    font-size: 1.6rem;
+  }
 }
 
 .statement-blurb {
@@ -73,6 +96,10 @@ body {
   padding: 3rem;
   box-shadow: $box-shadow;
 
+  @media only screen and (max-width: $bp-large) {
+    font-size: 2rem;
+    max-width: 30rem;
+  }
   @media only screen and (max-width: $bp-largest) {
     border: .5rem solid $color-sand;
     font-size: 3.5rem;

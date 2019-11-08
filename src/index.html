@@ -158,7 +158,9 @@
         <div class="form-box">
           <p class="text-blurb">Send me an email if you have any questions, or feel free to connect through social
             media!</p>
-          <form name="contact form" method="POST" data-netlify="true" class="form">
+          <form name="contact form" method="POST" action="https://formspree.io/xoqqvgev" class="form">
+            <input type="hidden" name="_subject" value="Portfolio contact" />
+            <input type="text" name="_gotcha" style="display:none" />
             <div class="form__group">
               <label for="name" class="form__label">Name</label>
               <input type="text" id="name" class="form__input" name="name" placeholder="Name" required>

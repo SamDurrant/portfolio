@@ -10,6 +10,9 @@ module.exports = {
       template: './src/index.html'
     })
   ],
+  externals: {
+    jquery: 'jQuery'
+  },
   module: {
     rules: [
       {

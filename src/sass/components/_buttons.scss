@@ -24,11 +24,11 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: $color-indigo;
-    font-size: 2rem;
+    font-size: 1.7rem;
     transition: $transition-one;
     cursor: pointer;
   }
-  
+
   &_lower:hover,
   &_lower:active {
     transform: scale(1.25);
@@ -59,31 +59,32 @@
   &:before {
     content: '';
     position: absolute;
-    top: -.5rem;
-    left: -.5rem;
+    top: -0.5rem;
+    left: -0.5rem;
     width: 0;
     height: 0;
     background: transparent;
-    border: .5rem solid transparent;
+    border: 0.5rem solid transparent;
   }
-  
+
   &:after {
     content: '';
     position: absolute;
-    bottom: -.5rem;
-    right: -.5rem;
+    bottom: -0.5rem;
+    right: -0.5rem;
     width: 0;
     height: 0;
     background: transparent;
-    border: .5rem solid transparent;
+    border: 0.5rem solid transparent;
   }
-  
+
   &:hover {
     &:before {
-      animation: animateBorder 150ms cubic-bezier(.17,.67,0,.85) forwards;
+      animation: animateBorder 150ms cubic-bezier(0.17, 0.67, 0, 0.85) forwards;
     }
     &:after {
-      animation: animateBorder2 150ms cubic-bezier(.17,.67,0,.85) forwards 150ms;
+      animation: animateBorder2 150ms cubic-bezier(0.17, 0.67, 0, 0.85) forwards
+        150ms;
     }
   }
 }
